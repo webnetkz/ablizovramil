@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="rgb(0, 0, 0)">
+        <meta name="author" content="TOO WebNet">
+        <meta name="description" content="Made in WebNet">
+        <meta name="keywords" content="WebNet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+
+        <link rel="shortcut icon" href="/public/img/miniLogo.png" type="image/png">
+        <link rel="apple-touch-icon" href="/public/img/logo.png">
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/mobileStyle.css">
+        <link rel="manifest" href="/public/json/manifest.json">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>
+          <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">AblizovRamil</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">My YouTube</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Get in touch</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Book a coaching</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <script>
+          // Проверка браузера на поддержку service worker
+         if('serviceWorker' in navigator) {
+             // Подключаем sw
+             navigator.serviceWorker.register('/sw.js').then(function() {
+                 console.log("Service Worker Registered");
+             });
+         }
+      </script>
+      <script src="public/js/main.js" type="module"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
